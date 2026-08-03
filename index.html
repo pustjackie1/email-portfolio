@@ -1,141 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Email Portfolio | Jackie Pust</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>Jaclyn Rae's Email Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-
-font-family:Montserrat,sans-serif;
-background:#f7f7f7;
-color:#222;
-
+    font-family:Montserrat,sans-serif;
+    background:#faf9f7;
+    color:#222;
 }
 
 .hero{
 
-padding:90px 20px;
-text-align:center;
-background:white;
+    padding:120px 30px 90px;
+    text-align:center;
+
+}
+
+.eyebrow{
+
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:13px;
+    color:#777;
+    margin-bottom:25px;
+    display:block;
 
 }
 
 .hero h1{
 
-font-size:56px;
-font-weight:800;
-margin-bottom:20px;
+    font-size:72px;
+    font-weight:800;
+    line-height:1;
+    letter-spacing:-2px;
+
+}
+
+.divider{
+
+    width:90px;
+    height:3px;
+    background:#111;
+    margin:35px auto;
 
 }
 
 .hero p{
 
-max-width:750px;
-margin:auto;
-line-height:1.8;
-font-size:19px;
-color:#666;
+    max-width:760px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+    font-size:20px;
 
 }
 
 .gallery{
 
-max-width:1200px;
-margin:70px auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-gap:40px;
-padding:0 30px;
+    max-width:1400px;
+    margin:0 auto 120px;
+    padding:0 40px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:45px;
 
 }
 
 .card{
 
-background:white;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 12px 30px rgba(0,0,0,.08);
-transition:.25s;
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.07);
+
+    transition:.3s;
 
 }
 
 .card:hover{
 
-transform:translateY(-8px);
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
 
 }
 
 .image{
-    height:420px;
-    overflow:hidden;
+
+    background:#f3f3f3;
+    padding:25px;
+
 }
 
 .image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.3s;
-}
 
-.card:hover .image img{
-    transform:scale(1.03);
+    width:100%;
+    display:block;
+    border-radius:12px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
 }
 
 .content{
 
-padding:30px;
+    padding:35px;
 
 }
 
 .content h2{
 
-margin-bottom:10px;
+    font-size:26px;
+    margin-bottom:15px;
 
 }
 
 .content p{
 
-line-height:1.7;
-color:#666;
-margin-bottom:25px;
+    color:#666;
+    line-height:1.7;
+    margin-bottom:28px;
 
 }
 
 .button{
 
-display:inline-block;
-background:#2c5135;
-color:white;
-padding:14px 28px;
-text-decoration:none;
-border-radius:8px;
-font-weight:700;
-transition:.25s;
+    display:inline-block;
+
+    background:#111;
+    color:white;
+
+    padding:15px 34px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.25s;
 
 }
 
 .button:hover{
 
-background:#183322;
+    background:#444;
 
 }
 
 footer{
 
-text-align:center;
-padding:80px;
-color:#999;
+    padding:70px 20px;
+    text-align:center;
+    color:#999;
+    font-size:14px;
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:80px 25px 60px;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.gallery{
+
+padding:0 20px;
+
+}
 
 }
 
@@ -147,22 +210,38 @@ color:#999;
 
 <section class="hero">
 
-<h1>Email Portfolio</h1>
+<span class="eyebrow">
+EMAIL DESIGN • HTML DEVELOPMENT • MARKETING
+</span>
+
+<h1>
+JACLYN RAE'S<br>
+EMAIL PORTFOLIO
+</h1>
+
+<div class="divider"></div>
 
 <p>
-A curated collection of responsive HTML email campaigns created for Roberts Resorts,
-Roberts Communities, and Village Camp. Every campaign shown here was designed,
-coded, and optimized for desktop and mobile email clients.
+
+Explore a growing collection of responsive HTML email campaigns I've designed,
+developed, and optimized for Roberts Resorts, Roberts Communities, Village Camp,
+and future clients. Each project reflects a balance of strategic marketing,
+thoughtful visual design, and responsive HTML development.
+
 </p>
 
 </section>
 
 <section class="gallery">
 
+<!-- EMAIL CARD 1 -->
+
 <div class="card">
 
 <div class="image">
-    <img src="pvr-email-2-june-5.jpg" alt="PVR Email Preview">
+
+<img src="pvr-email-2-june-5.png" alt="PVR Email Preview">
+
 </div>
 
 <div class="content">
@@ -171,16 +250,17 @@ coded, and optimized for desktop and mobile email clients.
 
 <p>
 
-Promotional email designed to increase resort bookings through engaging visuals,
-responsive HTML, and clear conversion-focused calls to action.
+Designed and developed to promote resort bookings through engaging visuals,
+mobile-friendly HTML, and strong call-to-action placement.
 
 </p>
 
-<a class="button"
+<a
+class="button"
 href="pvr-email-2-june-5.html"
 target="_blank">
 
-View Email
+View Email →
 
 </a>
 
@@ -188,11 +268,13 @@ View Email
 
 </div>
 
+<!-- END EMAIL CARD -->
+
 </section>
 
 <footer>
 
-Designed & Developed by Jackie Pust
+Designed & Developed by Jaclyn Rae
 
 </footer>
 
